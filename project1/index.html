@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="search-container">
+        <form>
+            <div class="dropdown">
+                <select id="categorySelect" onchange="document.getElementById('searchInput').value = this.value">
+                    <option value="Everything">Everything</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="IT Consultant">IT Consultant</option>
+                    <option value="Network Administrator">Network Administrator</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Enter your search..." id="searchInput" class="search-input">
+            <button type="button" class="search-button">Search</button>
+        </form>
+    </div>
+</body>
+</html>
